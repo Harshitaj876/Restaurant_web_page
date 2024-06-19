@@ -80,7 +80,7 @@ const MealCategories = () => {
                 <h3 className="font-bold text-lg">$8.45</h3>
               </div>
               <span className="block w-full border-b border-dashed border-gray-400 my-2"></span>
-              <div className='flex justify-between items-center'>
+              <div className='flex justify-between'>
                 <h4 className="font-bold text-xs">Lorem ipsum dolor sit amet quam in lacus risus</h4>
                 <button className='flex items-center'>
                   SHOP NOW <FaArrowRight className="ml-2" />
