@@ -65,7 +65,7 @@ const MealCategories = () => {
       </div>
       <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 mx-auto">
         {meals.map(meal => (
-          <li key={meal.idMeal} className="flex items-center mb-6 p-4 bg-white rounded-lg shadow-md">
+          <li key={meal.idMeal} className="flex items-center mb-6 p-4">
             <div className="relative rounded-full overflow-hidden w-20 h-20 sm:20 sm:h-20 bg-gray-200">
               <LazyLoadImage
                 src={meal.strMealThumb}
@@ -82,7 +82,7 @@ const MealCategories = () => {
               <span className="block w-full border-b border-dashed border-gray-400 my-2"></span>
               <div className='flex justify-between'>
                 <h4 className="font-bold text-xs">Lorem ipsum dolor sit amet quam in lacus risus</h4>
-                <button className='flex items-center bg-[#264e35] text-white px-4 py-2 rounded-md'>
+                <button className='flex items-center'>
                   SHOP NOW <FaArrowRight className="ml-2" />
                 </button>
               </div>
