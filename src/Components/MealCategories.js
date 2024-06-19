@@ -47,12 +47,12 @@ const MealCategories = () => {
     <div className="container mx-auto p-4">
       <h3 className="text-center font-bold mb-4 text-xl font-sans text-[#264e35]">Shop by Category</h3>
       <h1 className="text-center font-bold mb-8 text-4xl font-serif text-[#264e35]">Top Category Of Organic Food</h1>
-      <div className="flex flex-wrap justify-center gap-5 mb-10">
+      <div className="flex flex-wrap justify-center gap-2 sm:gap-5 mb-6">
         {categories.map(category => (
           <div
             key={category.strCategory}
             onClick={() => handleCategoryClick(category.strCategory)}
-            className={`cursor-pointer rounded-full inline-block px-14 py-3 transition-colors duration-200 text-center ${
+            className={`cursor-pointer rounded-full inline-block px-6 py-2 text-sm sm:px-14 sm:py-3 transition-colors duration-200 text-center ${
               selectedCategory === category.strCategory
                 ? 'bg-[#264e35] text-white font-semibold font-sans'
                 : 'bg-[#d5e3da] text-[#3b3416] font-semibold font-sans'
@@ -65,7 +65,7 @@ const MealCategories = () => {
       </div>
       <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 mx-auto">
         {meals.map(meal => (
-          <li key={meal.idMeal} className="flex items-center mb-6 p-4">
+          <li key={meal.idMeal} className="flex items-center mb-6 p-4 bg-white rounded-lg shadow-md">
             <div className="relative rounded-full overflow-hidden w-20 h-20 sm:20 sm:h-20 bg-gray-200">
               <LazyLoadImage
                 src={meal.strMealThumb}
@@ -82,7 +82,7 @@ const MealCategories = () => {
               <span className="block w-full border-b border-dashed border-gray-400 my-2"></span>
               <div className='flex justify-between'>
                 <h4 className="font-bold text-xs">Lorem ipsum dolor sit amet quam in lacus risus</h4>
-                <button className='flex items-center'>
+                <button className='flex items-center bg-[#264e35] text-white px-4 py-2 rounded-md'>
                   SHOP NOW <FaArrowRight className="ml-2" />
                 </button>
               </div>
