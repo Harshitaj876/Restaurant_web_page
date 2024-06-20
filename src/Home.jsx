@@ -2,13 +2,18 @@ import React from 'react';
 import MealCategories from './Components/MealCategories';
 import { FaArrowRight } from 'react-icons/fa';
 import NavBar from './Components/NavBar';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Image from './Assets/salad1.png'
 function Home() {
   return (
     <div>
     <NavBar/>
     <div className='absolute left-1/2 z-10 w-2/5 h-1/3 top-20'>
-      <img src={Image} alt=''></img>
+              <LazyLoadImage
+                src={Image}
+                alt=''
+                effect="blur"
+              />
     </div>
       <div className="flex flex-col lg:flex-row min-h-screen relative">
         <div className="lg:w-2/3 px-16 bg-[#F2F1EC] justify-center items-start flex flex-col gap-10 relative">
