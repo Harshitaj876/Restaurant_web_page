@@ -38,5 +38,5 @@ This repository contains a responsive restaurant landing page implemented using 
 ## API Integration
 1. The restaurant landing page integrates with the Free Meal API from TheMealDB.com.
    ```bash
-   Free Meal API | TheMealDB.com
+   https://www.themealdb.com/api.php
 2. To fetch meal data, make sure to obtain an API key from TheMealDB and replace ```YOUR_API_KEY_HERE``` in the relevant API fetch calls in your codebase.
