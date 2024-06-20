@@ -24,7 +24,7 @@ This repository contains a responsive restaurant landing page implemented using 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/restaurant-landing-page.git
+   git clone https://github.com/Harshitaj876/Restaurant_web_page
 2. Install Dependencies:
    ```bash
    npm install
