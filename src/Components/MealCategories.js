@@ -44,7 +44,7 @@ const MealCategories = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto px-32 mt-12">
       <h3 className="text-center font-bold mb-4 text-xl font-sans text-[#264e35]">Shop by Category</h3>
       <h1 className="text-center font-bold mb-8 text-4xl font-serif text-[#264e35]">Top Category Of Organic Food</h1>
       <div className="flex flex-wrap justify-center gap-2 sm:gap-5 mb-6">
@@ -76,14 +76,14 @@ const MealCategories = () => {
             </div>
             <div className="flex-1 ml-4">
               <div className='flex justify-between mb-2'>
-                <h3 className="font-bold text-lg">{meal.strMeal}</h3>
-                <h3 className="font-bold text-lg">$8.45</h3>
+                <h3 className="font-bold font-serif text-2xl text-[#173020]">{meal.strMeal}</h3>
+                <h3 className="font-bold text-lg text-[#264e35]">$8.45</h3>
               </div>
               <span className="block w-full border-b border-dashed border-gray-400 my-2"></span>
               <div className='flex justify-between'>
-                <h4 className="font-bold text-xs">Lorem ipsum dolor sit amet quam in lacus risus</h4>
-                <button className='flex items-center'>
-                  SHOP NOW <FaArrowRight className="ml-2" />
+                <h4 className="font-semibold text-xs text-[#7d847f] font-sans">Lorem ipsum dolor sit amet quam in lacus risus.</h4>
+                <button className='flex items-center text-[#264e35] font-semibold'>
+                  SHOP NOW <FaArrowRight className="ml-2 text-[#264e35]" />
                 </button>
               </div>
             </div>
