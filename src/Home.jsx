@@ -1,11 +1,13 @@
 import React from 'react';
 import MealCategories from './Components/MealCategories';
 import { FaArrowRight } from 'react-icons/fa';
+import NavBar from './Components/NavBar';
 function Home() {
   return (
     <div>
+    <NavBar/>
       <div className="flex flex-col lg:flex-row min-h-screen relative">
-        <div className="lg:w-3/5 p-6 bg-[#F2F1EC] justify-center items-start flex flex-col gap-10 relative">
+        <div className="lg:w-2/3 pl-16 bg-[#F2F1EC] justify-center items-start flex flex-col gap-10 relative">
           <div className='flex flex-col gap-3 w-2/3'>
             <h2 className='text-[#345333] font-sans text-xl font-bold'>Discount upto 20%</h2>
             <p className='text-[#345333] font-serif text-5xl font-bold'>Buy Fresh And Organic Grocery Food</p>
@@ -28,7 +30,7 @@ function Home() {
         </div>
         
         
-        <div className="w-full lg:w-2/5 p-6 bg-[#345333]">
+        <div className="w-full lg:w-1/2 p-6 bg-[#345333]">
         </div>
       </div>
 
