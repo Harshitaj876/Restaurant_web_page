@@ -3,18 +3,19 @@ import MealCategories from './Components/MealCategories';
 import { FaArrowRight } from 'react-icons/fa';
 import NavBar from './Components/NavBar';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import Image from './Assets/salad1.png'
+import Image from './Assets/salad1.png';
+
 function Home() {
   return (
     <div>
-    <NavBar/>
-    <div className='absolute left-1/2 z-10 w-2/5 h-1/3 top-20'>
-              <LazyLoadImage
-                src={Image}
-                alt=''
-                effect="blur"
-              />
-    </div>
+      <NavBar />
+      <div className='hidden lg:block absolute left-1/2 z-10 w-2/5 h-1/3 top-20'>
+        <LazyLoadImage
+          src={Image}
+          alt=''
+          effect="blur"
+        />
+      </div>
       <div className="flex flex-col lg:flex-row min-h-screen relative">
         <div className="lg:w-2/3 px-16 bg-[#F2F1EC] justify-center items-start flex flex-col gap-10 relative">
           <div className='flex flex-col gap-3'>
@@ -38,8 +39,9 @@ function Home() {
           </div>
         </div>
         
-        
-        <div className="w-full lg:w-1/2 p-6 bg-[#345333]">
+        {/* Conditionally render the following div on larger screens only */}
+        <div className="hidden lg:block w-full lg:w-1/2 bg-[#345333]">
+          {/* Content for the right side */}
         </div>
       </div>
 
