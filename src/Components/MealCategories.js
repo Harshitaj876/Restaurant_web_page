@@ -44,7 +44,7 @@ const MealCategories = () => {
   };
 
   return (
-    <div className="container mx-auto p-4 mt-12">
+    <div className="container mx-auto p-4 ">
       <h3 className="text-center font-bold mb-4 text-xl font-sans text-[#264e35]">Shop by Category</h3>
       <h1 className="text-center font-bold mb-8 text-4xl font-serif text-[#264e35]">Top Category Of Organic Food</h1>
       <div className="flex flex-wrap justify-center gap-2 sm:gap-5 mb-6">

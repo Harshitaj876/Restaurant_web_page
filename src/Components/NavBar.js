@@ -24,7 +24,7 @@ const NavBar = () => {
       <button className='hidden sm:flex flex-row items-center text-white text-sm sm:text-base'>
         Connect with us<span className='ml-2'><FaArrowRight/></span>
       </button>
-      <div className='flex flex-row items-center gap-2'>
+      <div className='hidden sm:flex flex-row items-center gap-2'>
         <button className='p-2 sm:p-3 bg-white bg-opacity-10 rounded-full'>
           <FaSearch color='#F1F1EB'/>
         </button>
@@ -37,12 +37,12 @@ const NavBar = () => {
         <button className='p-2 sm:p-3 bg-white bg-opacity-10 rounded-full'>
           <FaCartShopping color='#F1F1EB'/>
         </button>
-        <button className='sm:hidden p-2 bg-white bg-opacity-10 rounded-full' onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          {isMenuOpen ? <FaTimes color='#111111' /> : <FaBars color='#111111' />}
-        </button>
       </div>
+      <button className='sm:hidden p-2 bg-white bg-opacity-10 rounded-full' onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        {isMenuOpen ? <FaTimes color='#111111' /> : <FaBars color='#111111' />}
+      </button>
       {isMenuOpen && (
-        <div className='absolute top-14 right-0 w-fir bg-white flex flex-col items-end px-8  sm:hidden'>
+        <div className='absolute top-14 right-0 w-fit bg-white px-8 py-2 flex flex-col items-end sm:hidden'>
           <button className='flex items-center text-base font-semibold py-2'>
             Home
           </button>
@@ -54,6 +54,15 @@ const NavBar = () => {
           </button>
           <button className='flex items-center text-base font-semibold py-2'>
             Connect with us
+          </button>
+          <button className='flex items-center text-base font-semibold py-2'>
+            Profile
+          </button>
+          <button className='flex items-center text-base font-semibold py-2'>
+            Cart
+          </button>
+          <button className='flex items-center text-base font-semibold py-2'>
+            Favourites
           </button>
         </div>
       )}
