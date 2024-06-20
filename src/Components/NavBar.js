@@ -42,18 +42,18 @@ const NavBar = () => {
         </button>
       </div>
       {isMenuOpen && (
-        <div className='absolute top-14 left-0 w-full bg-white bg-opacity-90 flex flex-col items-center sm:hidden'>
+        <div className='absolute top-14 right-0 w-fir bg-white flex flex-col items-end px-8  sm:hidden'>
           <button className='flex items-center text-base font-semibold py-2'>
-            Home<span className='ml-1'><FaChevronDown/></span>
+            Home
           </button>
           <button className='flex items-center text-base font-semibold py-2'>
-            Groceries<span className='ml-1'><FaChevronDown/></span>
+            Groceries
           </button>
           <button className='flex items-center text-base font-semibold py-2'>
-            Pages<span className='ml-1'><FaChevronDown/></span>
+            Pages
           </button>
           <button className='flex items-center text-base font-semibold py-2'>
-            Connect with us<span className='ml-1'><FaArrowRight/></span>
+            Connect with us
           </button>
         </div>
       )}

@@ -7,11 +7,11 @@ function Home() {
     <div>
     <NavBar/>
       <div className="flex flex-col lg:flex-row min-h-screen relative">
-        <div className="lg:w-2/3 pl-16 bg-[#F2F1EC] justify-center items-start flex flex-col gap-10 relative">
-          <div className='flex flex-col gap-3 w-2/3'>
+        <div className="lg:w-2/3 px-16 bg-[#F2F1EC] justify-center items-start flex flex-col gap-10 relative">
+          <div className='flex flex-col gap-3'>
             <h2 className='text-[#345333] font-sans text-xl font-bold'>Discount upto 20%</h2>
             <p className='text-[#345333] font-serif text-5xl font-bold'>Buy Fresh And Organic Grocery Food</p>
-            <p className='text-[#cfcbc7] font-sans'>Lorem ipsum dolor sit amet consectetur. Condimuntum sed sed blandit purus nec nibh tortor ipsum. Placeret consequant lorem.</p>
+            <p className='text-[#cfcbc7] font-sans'>Lorem ipsum dolor sit amet consectetur. Condimuntum sed sed blandit purus.</p>
           </div>
           <div className='flex flex-row items-center gap-20'>
             <button className='font-sans bg-[#345333] text-white text-xs font-bold px-6 py-4 rounded-full flex items-center '>SHOP NOW<FaArrowRight className="ml-2" /></button>
