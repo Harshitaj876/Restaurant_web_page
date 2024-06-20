@@ -7,6 +7,7 @@ This repository contains a responsive restaurant landing page implemented using 
 - **React Font Awesome Icons**: Utilizes Font Awesome icons through React components for scalable and customizable iconography across the site.
 - **Lazy Loading**: Implements lazy loading techniques to enhance performance by deferring the loading of non-critical resources until they are needed.
 - **Responsiveness**: Built with a mobile-first approach, ensuring a seamless experience across devices of all sizes.
+- **Use of external API**: Fetches meal data dynamically from [TheMealDB.com](https://www.themealdb.com/) to display featured dishes or daily specials.
 
 ## Technologies Used
 
@@ -32,3 +33,10 @@ This repository contains a responsive restaurant landing page implemented using 
    ```bash
    npm start
 4. Open ```http://localhost:3000``` in your browser to view the landing page.
+
+
+## API Integration
+1. The restaurant landing page integrates with the Free Meal API from TheMealDB.com.
+   ```bash
+   Free Meal API | TheMealDB.com
+2. To fetch meal data, make sure to obtain an API key from TheMealDB and replace ```YOUR_API_KEY_HERE``` in the relevant API fetch calls in your codebase.
